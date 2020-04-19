@@ -357,7 +357,7 @@ textarea.contact-form-text {
 }
 .wrapper {
   margin: 10%;
-  max-width: 800px;
+  /* max-width: 100; */
   display: inline-block;
   justify-content: center;
   align-items: center;
