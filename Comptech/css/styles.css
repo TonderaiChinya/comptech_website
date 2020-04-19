@@ -360,7 +360,7 @@ textarea.contact-form-text {
   z-index: -2;
 }
 .wrapper {
-  margin: 10%;
+  margin: 5%;
   /* max-width: 100; */
   display: inline-block;
   justify-content: center;
@@ -387,7 +387,7 @@ textarea.contact-form-text {
 .images-info h3 {
   padding: 20px 0;
   font-size: 40px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #fff;
 }
 .images-info p {
   /* background-color: black; */
