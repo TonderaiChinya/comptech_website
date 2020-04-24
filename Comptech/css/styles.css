@@ -173,8 +173,8 @@ h4 {
   margin-left: 10%;
 
   max-width: 80%;
-  background: #333;
-  /* opacity: 0.7; */
+  /* background: #666; */
+  opacity: 0.8;
   position: relative;
   z-index: 1;
   padding-left: 10px;
@@ -191,6 +191,17 @@ h4 {
   font-size: 3em;
   font-weight: bolder;
 }
+.main-text h5 {
+  font-family: "Ropa Sans", sans-serif;
+  color: #000;
+  font-size: 50px;
+}
+.main-text h6 {
+  font-family: "Ropa Sans", sans-serif;
+  color: #0082e6;
+  font-size: 1.4em;
+  /* margin-left: 30%; */
+}
 .mid-text {
   font-size: 1.5em;
   padding: 10px;
@@ -205,6 +216,7 @@ h4 {
 .slide-container {
   width: 600px;
   height: 400px;
+
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
