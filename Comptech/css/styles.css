@@ -69,6 +69,7 @@ label #btn {
   top: 25px;
   font-size: 35px;
   color: white;
+  border: 1px solid #000;
   padding: 2px 4px;
   transition: all 0.5s;
 }
@@ -98,7 +99,7 @@ label #cancel {
 
 .brand {
   font-family: "Ropa Sans", sans-serif;
-  color: #333;
+  color: rgb(87, 144, 155);
   font-size: 50px;
 }
 .brand h6 {
@@ -197,7 +198,7 @@ h4 {
 }
 .main-text h5 {
   font-family: "Ropa Sans", sans-serif;
-  color: #000;
+  color: rgb(87, 144, 155);
   font-size: 50px;
 }
 .main-text h6 {
@@ -251,13 +252,16 @@ h4 {
   transform: perspective(600px) rotateY(0deg);
 }
 .back {
-  background: #79747a;
+  background: #000;
   transform: perspective(600px) rotateY(180deg);
 }
 .back-content {
-  color: #000;
-  /* text-align: center;
-  align-items: center; */
+  margin-top: 20%;
+  padding: 20px;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
   width: 100%;
 }
 .card:hover > .front {
