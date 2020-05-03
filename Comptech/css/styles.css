@@ -99,7 +99,7 @@ label #cancel {
 
 .brand {
   font-family: "Ropa Sans", sans-serif;
-  color: rgb(87, 144, 155);
+  color: #000;
   font-size: 50px;
 }
 .brand h6 {
@@ -403,8 +403,14 @@ textarea.contact-form-text {
   /* padding: 5px; */
 }
 .company-logo {
-  max-width: 200px;
+  max-width: 50px;
 }
+/* .company-logo img {
+  float: left;
+} */
+/* .company-logo .brand {
+  float: right;
+} */
 .row-container {
   /* margin-left: 20px; */
   margin-top: 43px;
