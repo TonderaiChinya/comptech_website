@@ -525,15 +525,55 @@ textarea.contact-form-text {
 
 /* projecs */
 .projects {
-  /* background: url(../img/projects.jpeg) no-repeat;
-  background-size: cover; */
+  background: url(../img/projects.jpeg) no-repeat;
+  background-size: cover;
   text-align: center;
 }
 .projects-details img {
   width: 100%;
 }
-.projects-details h1 {
+/* .projects-details h1 {
   font-size: 100px;
+} */
+
+.projects {
+  display: grid;
+  padding: 7%;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projects img {
+  width: 100%;
+  border: 3px #fff solid;
+}
+.projects img:hover {
+  opacity: 0.7;
+  border-color: #00c0ff;
+  transition: all 0.5s ease-out;
+}
+.btn,
+.btn-dark,
+.btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.btn:hover,
+.btn-dark:hover,
+.btn-light:hover {
+  background: #00c0ff;
+  color: #000;
+}
+
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
+.btn-light {
+  background: #b3b3b3;
+  color: #333;
 }
 
 /* footer */
@@ -612,6 +652,9 @@ footer .sig li a:hover {
   .left-content p {
     font-size: 1em;
   }
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 952px) {
@@ -632,7 +675,11 @@ footer .sig li a:hover {
     grid-template-areas: "left-content";
     grid-template-columns: repeat(1, 1fr);
   }
+  .projects {
+    padding: 10%;
+  }
 }
+
 @media (max-width: 600px) {
   .slide-container {
     display: none;
