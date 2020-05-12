@@ -176,6 +176,126 @@ h4 {
 .home-content {
   padding: 20px;
 }
+.hovv img {
+  width: 100px;
+}
+
+.hovv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  background: rgb(123, 164, 172);
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+}
+
+.hovv:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hovv:hover:before,
+.hovv:hover:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #272829;
+  border-radius: 50px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.hovv:hover:after {
+  background: #b75ef3;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
 .main-text {
   margin-left: 10%;
 
@@ -471,10 +591,13 @@ textarea.contact-form-text {
 }
 /*about-page */
 .page-content {
-  background: url(../img/long_background.jpeg) no-repeat;
-  background-size: cover;
+  background: rgb(123, 164, 172);
+  color: #111;
+  /* background: url(../img/long_background.jpeg) no-repeat;
+  background-size: cover; */
 }
 .about-container {
+  padding: 20px;
   max-width: 80%;
   display: grid;
   grid-gap: 50px;
@@ -483,15 +606,42 @@ textarea.contact-form-text {
     "crew crew";
   grid-template-columns: repeat(2, 1fr);
 }
-.about-container h3 {
+.hr-text {
+  font-size: 26px;
+  position: relative;
+  border: 0;
+  height: 1.5em;
+}
+.hr-text:before {
+  content: "";
+  background: linear-gradient(to right, transparent, #f5f2f2, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #000;
+  background: rgb(123, 164, 172);
+}
+
+/* .about-container h3 {
   margin-top: 40px;
   font-size: 2.5rem;
   margin-bottom: 20px;
   border-bottom: 1px solid #fff;
-}
+} */
 .about-container .our-discription {
   text-align: center;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 .team {
   max-width: 80%;
@@ -644,7 +794,7 @@ footer hr {
 footer .sig p {
   margin-top: 12px;
   padding-bottom: 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 footer .sig li a {
   color: #777;
