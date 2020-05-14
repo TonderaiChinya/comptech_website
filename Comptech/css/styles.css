@@ -175,6 +175,7 @@ h4 {
 
 .home-content {
   padding: 20px;
+  height: 100%;
 }
 .hovv img {
   width: 100px;
@@ -186,10 +187,10 @@ h4 {
   justify-content: center;
   position: relative;
   margin: 20px auto;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   background: rgb(123, 164, 172);
-  border-radius: 50px;
+  border-radius: 50%;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: lighter;
@@ -206,10 +207,10 @@ h4 {
   display: block;
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   background: #272829;
-  border-radius: 50px;
+  border-radius: 50%;
   z-index: -1;
   animation: 1s clockwise infinite;
 }
@@ -297,37 +298,23 @@ h4 {
   }
 }
 .main-text {
-  margin-left: 10%;
-
-  max-width: 80%;
-  /* background: #666; */
-  opacity: 0.8;
-  position: relative;
-  z-index: 1;
-  padding-left: 10px;
-  padding-top: 20px;
-
-  text-align: center;
-  /* border-bottom: 1px solid #2980b9;
-  border-top: 1px solid #be13e0;
-  border-right: 1px solid #2980b9;
-  border-left: 1px solid #be13e0;
-  box-shadow: 1px 2px 4px #000; */
+  margin: auto;
 }
-.main-text h2 {
+
+.main-text .logo-in h2 {
   font-family: "Ropa Sans", sans-serif;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: bolder;
 }
-.main-text h5 {
+.main-text .logo-in h5 {
   font-family: "Ropa Sans", sans-serif;
   color: rgb(0, 0, 0);
-  font-size: 50px;
+  font-size: 5em;
 }
-.main-text h6 {
+.main-text .logo-in h6 {
   font-family: "Ropa Sans", sans-serif;
   color: #0082e6;
-  font-size: 1.4em;
+  font-size: 3em;
   /* margin-left: 30%; */
 }
 .mid-text {
@@ -337,12 +324,11 @@ h4 {
   color: #000;
   font-weight: bold;
 }
-.bottom-text {
-  max-width: 650px;
-  margin: 40px auto;
-}
+
 .bottom-text p {
+  font-family: "Ropa Sans", sans-serif;
   /* text-align: left; */
+  font-size: 1.5em;
   font-weight: 800;
   padding: 5px;
 }
@@ -356,7 +342,69 @@ h4 {
   font-size: 30px;
   color: #4f8bca;
 }
+
 /* flipping cards */
+
+.flip-cards {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flip-card {
+  cursor: pointer;
+  width: 250px;
+  height: 143px;
+}
+/* .flip-front.c-1 {
+  background: #b75ef3;
+}
+.flip-front.c-2 {
+  background-color: #2f2cb8;
+}
+.flip-front.c-3 {
+  background-color: #1db817;
+}
+.flip-front.c-4 {
+  background-color: #f3bf5e;
+} */
+
+.flip-front img {
+  width: 100%;
+}
+.flip-front,
+.flip-back {
+  width: 250px;
+  height: 143px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+
+  transition: transform 0.6s linear;
+}
+
+.flip-front {
+  transform: perspective(400px) rotateY(0deg);
+}
+.flip-back {
+  background: rgb(238, 242, 243);
+  transform: perspective(400px) rotateY(180deg);
+}
+.flip-back-content {
+  padding: 40px;
+
+  font-size: 15px;
+  color: rgb(47, 43, 43);
+  text-align: center;
+
+  width: 100%;
+}
+.flip-card:hover > .flip-front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+.flip-card:hover > .flip-back {
+  transform: perspective(600px) rotateY(0deg);
+}
 /* .middle {
   position: absolute;
   top: 50%;
@@ -410,56 +458,6 @@ h4 {
 .card:hover > .back {
   transform: perspective(600px) rotateY(0deg);
 }
-
-/* .slide-container {
-  width: 600px;
-  height: 400px;
-
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #fff;
-  overflow: hidden;
-  text-align: center;
-  z-index: 6;
-}
-.image-container {
-  width: 1800px;
-  height: 400px;
-  position: relative;
-  transition: left 2s;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-}
-.slider-image {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-}
-
-.button-container {
-  z-index: 10;
-  top: -20px;
-  position: relative;
-}
-.slider-button {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-#slider-image-1:target ~ .image-container {
-  left: 0px;
-}
-#slider-image-2:target ~ .image-container {
-  left: -600px;
-}
-#slider-image-3:target ~ .image-container {
-  left: -1200px;
-} */
 
 /* contact section */
 .left-content h2 {
@@ -778,7 +776,7 @@ footer .sig {
   z-index: 10;
 }
 
-footer hr {
+.footer-mark {
   width: 70%;
   margin: 20px auto;
   border: 0;
