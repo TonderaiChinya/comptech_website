@@ -536,6 +536,7 @@ textarea.contact-form-text {
   text-align: center;
   height: 300px;
   margin: 0;
+  padding: 40px;
 }
 .banner-bg h1 {
   font-size: 5em;
@@ -587,8 +588,8 @@ textarea.contact-form-text {
 /* #############                   ABOUT-PAGE                     ############## */
 /* ############################################################################# */
 .page-content {
-  background: rgb(123, 164, 172);
-  color: #111;
+  background: rgb(24, 26, 27);
+  color: #fff;
   /* background: url(../img/long_background.jpeg) no-repeat;
   background-size: cover; */
 }
@@ -621,12 +622,12 @@ textarea.contact-form-text {
   content: attr(data-content);
   position: relative;
   display: inline-block;
-  color: black;
+  color: #fff;
 
   padding: 0 0.5em;
   line-height: 1.5em;
-  color: #000;
-  background: rgb(123, 164, 172);
+  color: #fff;
+  background: rgb(24, 26, 27);
 }
 
 /* .about-container h3 {
@@ -667,9 +668,9 @@ textarea.contact-form-text {
 /* #############                   PROJECTS-PAGE                  ############## */
 /* ############################################################################# */
 .projects {
-  background: url(../img/projects.jpeg) no-repeat;
-  background-size: cover;
-  text-align: center;
+  background: rgb(24, 26, 27);
+  height: 100%;
+  font-family: "Ropa Sans", sans-serif;
 }
 .projects-details img {
   width: 100%;
