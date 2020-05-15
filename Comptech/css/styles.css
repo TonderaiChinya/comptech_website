@@ -13,7 +13,9 @@ body {
 a {
   color: #fff;
 }
-/* side-bar */
+/* ############################################################################# */
+/* #############                   NAVIGATION-BAR                 ############## */
+/* ############################################################################# */
 .sidebar {
   position: fixed;
   left: -250px;
@@ -130,13 +132,15 @@ h4 {
   text-align: center;
 }
 
-/* main-page */
+/* ############################################################################# */
+/* #############                   HOME-PAGE                      ############## */
+/* ############################################################################# */
 .main {
-  background: rgb(123, 164, 172);
+  background: rgb(24, 26, 27);
   /* background-size: cover;
   background-position: center; */
   height: 100%;
-  z-index: 3;
+
   padding: 0px;
   text-align: center;
 }
@@ -144,16 +148,6 @@ h4 {
 #home {
   transition: all 0.5s;
 }
-/* .outer {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: #2c3e50;
-  opacity: 0.7;
-  position: relative;
-  z-index: 1;
-} */
 
 .social-icons {
   display: flex;
@@ -189,7 +183,7 @@ h4 {
   margin: 20px auto;
   width: 65px;
   height: 65px;
-  background: rgb(123, 164, 172);
+  background: rgb(24, 26, 27);
   border-radius: 50%;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -308,7 +302,7 @@ h4 {
 }
 .main-text .logo-in h5 {
   font-family: "Ropa Sans", sans-serif;
-  color: rgb(0, 0, 0);
+  color: rgb(253, 250, 250);
   font-size: 5em;
 }
 .main-text .logo-in h6 {
@@ -322,14 +316,14 @@ h4 {
   padding: 10px;
   text-transform: capitalize;
   color: #000;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 .bottom-text p {
   font-family: "Ropa Sans", sans-serif;
   /* text-align: left; */
   font-size: 1.5em;
-  font-weight: 800;
+  font-weight: 100;
   padding: 5px;
 }
 .bottom-text hr {
@@ -355,6 +349,7 @@ h4 {
   cursor: pointer;
   width: 250px;
   height: 143px;
+  margin: 10px;
 }
 /* .flip-front.c-1 {
   background: #b75ef3;
@@ -394,6 +389,7 @@ h4 {
   padding: 40px;
 
   font-size: 15px;
+  font-weight: bolder;
   color: rgb(47, 43, 43);
   text-align: center;
 
@@ -405,12 +401,7 @@ h4 {
 .flip-card:hover > .flip-back {
   transform: perspective(600px) rotateY(0deg);
 }
-/* .middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+
 .cards {
   margin: 10px 0;
   display: flex;
@@ -459,7 +450,9 @@ h4 {
   transform: perspective(600px) rotateY(0deg);
 }
 
-/* contact section */
+/* ############################################################################# */
+/* #############                   CONTACT-PAGE                   ############## */
+/* ############################################################################# */
 .left-content h2 {
   font-size: 3em;
   /* margin: 15px; */
@@ -529,65 +522,70 @@ textarea.contact-form-text {
   overflow: hidden;
 } */
 
-/* service-page */
+/* ############################################################################# */
+/* #############                   SERVICES-PAGE                  ############## */
+/* ############################################################################# */
 .services {
-  background: url(../img/long_background4.jpeg) no-repeat;
+  background: rgb(24, 26, 27);
+  height: 100%;
+  font-family: "Ropa Sans", sans-serif;
+}
+.banner-bg {
+  background: url(../img/service-bg.jpeg) no-repeat;
   background-size: cover;
+  text-align: center;
+  height: 300px;
+  margin: 0;
+}
+.banner-bg h1 {
+  font-size: 5em;
+  color: #000;
 }
 .services-details {
-  text-align: center;
-  transition: all 0.5s;
-  /* padding-top: 10vh; */
-  margin-bottom: 100px;
-  z-index: -2;
+  padding: 20px;
 }
-.wrapper {
-  margin: 5%;
-  /* max-width: 100; */
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  /* margin-bottom: 500px; */
+
+.wrapp {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% auto;
 }
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.8;
-  z-index: 1;
+/* .overlay {
+  background-color: rgba(68, 26, 26, 0.1);
+  z-index: 3;
+} */
+.image img {
+  width: 450px;
+  height: 300px;
 }
 .images-info {
-  margin-top: 10px;
-  /* background-color: #111; */
-
   color: #fff;
+  max-width: 600px;
 
-  padding: 20px;
-  z-index: -2;
+  padding: 10px 0;
 }
 
 .images-info h3 {
-  padding: 20px 0;
   font-size: 40px;
-  border-bottom: 2px solid #fff;
 }
 .images-info p {
-  /* background-color: black; */
-  /* opacity: 0.5; */
-  padding: 20px;
-  font-size: 24px;
   font-weight: 600;
   line-height: 30px;
+  padding: 10px;
 }
 
-/* community */
+/* ############################################################################# */
+/* #############                 COMMUNITY-PAGE                   ############## */
+/* ############################################################################# */
 .community {
   background: #1b9bff;
 }
 .community img {
   width: 100%;
 }
-/*about-page */
+/* ############################################################################# */
+/* #############                   ABOUT-PAGE                     ############## */
+/* ############################################################################# */
 .page-content {
   background: rgb(123, 164, 172);
   color: #111;
@@ -665,7 +663,9 @@ textarea.contact-form-text {
   box-shadow: 2px 2px 7px #fff;
 }
 
-/* projecs */
+/* ############################################################################# */
+/* #############                   PROJECTS-PAGE                  ############## */
+/* ############################################################################# */
 .projects {
   background: url(../img/projects.jpeg) no-repeat;
   background-size: cover;
@@ -718,7 +718,9 @@ textarea.contact-form-text {
   color: #333;
 }
 
-/* footer */
+/* ############################################################################# */
+/* #############                     FOOTER                       ############## */
+/* ############################################################################# */
 footer {
   font-family: "Ropa Sans", sans-serif;
   padding: 20px 0;
@@ -769,6 +771,7 @@ footer {
   font-size: 15px;
 }
 footer .sig {
+  text-align: center;
   padding: 10px;
   width: 100%;
   color: #aaa;
@@ -801,7 +804,9 @@ footer .sig li a:hover {
   color: #0082e6;
 }
 
-/* MEDIA QUIRIES */
+/* ############################################################################# */
+/* #############                   MEDIA-QUIRIES                  ############## */
+/* ############################################################################# */
 
 /* mobile */
 
