@@ -531,35 +531,53 @@ textarea.contact-form-text {
   text-align: center;
   height: 200px;
   margin: 0;
-  padding: 40px;
-  color: #000;
+  /* padding: 40px; */
+  color: #fff;
 }
 .banner-bg h1 {
   font-size: 5em;
 }
-.services-details {
+/* .services-details {
   padding: 20px;
-}
+} */
 
 .wrapp {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 5% auto;
+  margin-top: 10%;
 }
-/* .overlay {
-  background-color: rgba(68, 26, 26, 0.1);
-  z-index: 3;
-} */
+.technical {
+  background: url(../img/technical.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.webdesign {
+  background: url(../img/webdev.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.networking {
+  background: url(../img/networking.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.marketing {
+  background: url(../img/digital-marketing.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 .image img {
   min-width: 300px;
   /* height: 300px; */
 }
 .images-info {
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  min-width: 300px;
-
-  padding: 10px 0;
+  padding: 5%;
 }
 
 .images-info h3 {
@@ -703,8 +721,8 @@ textarea.contact-form-text {
   text-align: center;
   height: 200px;
   margin: 0;
-  padding: 40px;
-  color: #000;
+  /* padding: 40px; */
+  color: #fff;
 }
 .projects-details img {
   width: 100%;

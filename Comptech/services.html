@@ -76,23 +76,22 @@
 
       <!--services page content -->
       <section class="services" id="home">
-        <div class="overlay">
+       
           <div class="banner-bg">
+            <div class="overlay">
           
             <h1>OUR SERVICES...</h1>
             <p> When our clients are happy, then we are also happy.</p>
-              
-           
+            </div>
           </div>
-        </div>
         <div class="services-cover">
           <div class="services-details">
-            <div class="wrapp">
-              <div class="image">
+            <div class="wrapp technical">
+              <!-- <div class="image">
                 <img src="./img/support.jpeg" alt="support-image" />
-              </div>
-              <div class="images-info">
-                <h3 id="support">TECHNICAL SUPPORT &amp; CONSULTANCY</h3>
+              </div> -->
+              <div class="images-info" id="support">
+                <h3 >TECHNICAL SUPPORT &amp; CONSULTANCY</h3>
                 <p>
                   Why worry about your IT?
                   <br />
@@ -109,13 +108,13 @@
          
 
 
-            <div class="wrapp">
-              <div class="image">
+            <div class="wrapp webdesign" id="software">
+              <!-- <div class="image">
                 <img src="./img/web.jpeg" alt="Web-Design-image" />
-              </div>
+              </div> -->
             
               <div class="images-info">             
-                <h3 id="software">WEB DESIGN & WEB DEVELOPMENT</h3>
+                <h3 >WEB DESIGN & WEB DEVELOPMENT</h3>
                 <p>
                   Are you looking for a fast website, with robust html, mobile
                   friendly, a website with the best design you desire and
@@ -136,12 +135,12 @@
             </div>
 
 
-            <div class="wrapp">
-              <div class="image">
+            <div class="wrapp networking" id="network">
+              <!-- <div class="image">
                 <img src="./img/network.jpg" alt="net-image" />
-              </div>
+              </div> -->
               <div class="images-info">
-                <h3 id="network">NETWORKING SOLUTIONS & IT INFRASTRUCTURE</h3>
+                <h3 >NETWORKING SOLUTIONS & IT INFRASTRUCTURE</h3>
                 <p>
                   Our advanced technology services team specializes in the
                   provision of enterprise architecture services, software
@@ -156,56 +155,77 @@
               </div>
             </div>
 
+            <div class="wrapp marketing"  id="digital">
+              <!-- <div class="image">
+                <img src="./img/network.jpg" alt="net-image" />
+              </div> -->
+              <div class="images-info">
+                <h3>DIGITAL MARKETING & S.E.O</h3>
+                <p>
+                  Our advanced technology services team specializes in the
+                  provision of enterprise architecture services, software
+                  defined networking, wireless solutions, network switching and
+                  routing and software asset management.
+                  <br />
+                  At Comptech, we analyse your working environment and business
+                  objectives, before designing a free-flowing, simplified
+                  network that delivers the right balance of speed,
+                  accessibility, reliability and security.
+                </p>
+              </div>
+            </div>
+
+
            
+            <!--
+            <div class="contact-dev">
+              <div class="left-content">
+                <h2>GET IN TOUCH</h2>
 
-          <div class="contact-dev">
-            <div class="left-content">
-              <h2>GET IN TOUCH</h2>
+                <p>Interested in working with us?</p>
+                <p>
+                  We would love to hear from you.
+                </p>
+                <p>
+                  Fill out the contact form
+                  <br />
+                  or send us an email at:
+                  <br />
+                  info@comptecheng.co.za
+                </p>
+              </div>
 
-              <p>Interested in working with us?</p>
-              <p>
-                We would love to hear from you.
-              </p>
-              <p>
-                Fill out the contact form
-                <br />
-                or send us an email at:
-                <br />
-                info@comptecheng.co.za
-              </p>
-            </div>
-
-            <div class="contact-section">
-              <form class="contact-form" action="index.html" method="post">
-                <input
-                  type="text"
-                  class="contact-form-text"
-                  placeholder="Your name"
-                />
-                <hr />
-                <input
-                  type="email"
-                  class="contact-form-text"
-                  placeholder="Your email"
-                />
-                <hr />
-                <input
-                  type="tel"
-                  class="contact-form-text"
-                  placeholder="Your phone"
-                />
-                <hr />
-                <textarea
-                  class="contact-form-text"
-                  placeholder="Your message"
-                ></textarea>
-                <hr />
-                <input type="submit" class="contact-form-btn" value="Send" />
-              </form>
-            </div>
-          </div>
+               <div class="contact-section">
+                <form class="contact-form" action="index.html" method="post">
+                  <input
+                    type="text"
+                    class="contact-form-text"
+                    placeholder="Your name"
+                  />
+                  <hr />
+                  <input
+                    type="email"
+                    class="contact-form-text"
+                    placeholder="Your email"
+                  />
+                  <hr />
+                  <input
+                    type="tel"
+                    class="contact-form-text"
+                    placeholder="Your phone"
+                  />
+                  <hr />
+                  <textarea
+                    class="contact-form-text"
+                    placeholder="Your message"
+                  ></textarea>
+                  <hr />
+                  <input type="submit" class="contact-form-btn" value="Send" />
+                </form>
+              </div>
+            </div> -->
         </div>
-      </section>
+      
           
             <!-- contact-us -->
            
@@ -274,14 +294,16 @@
                     <h5>WHAT WE DO</h5>
                     <ul>
                       <li>
-                        <a href="./services.html#software">WEB DEV & DESIGN</a>
-                      </li>
-                      <li><a href="./projects.html">DIGITAL MARKETING</a></li>
-                      <li>
-                        <a href="./services.html#network">NETWORKING SUPPORT</a>
+                        <a href="#software">WEB DEV & DESIGN</a>
                       </li>
                       <li>
-                        <a href="./services.html#support">TECHNICAL SUPPORT</a>
+                        <a href="#digital">DIGITAL MARKETING</a>
+                      </li>
+                      <li>
+                        <a href="#network">NETWORKING SUPPORT</a>
+                      </li>
+                      <li>
+                        <a href="#support">TECHNICAL SUPPORT</a>
                       </li>
                     </ul>
                   </div>
@@ -301,7 +323,7 @@
                 </p>
               </div>
             </footer>
-            
+          </section>
             <!--end of contact-us -->
          
         </div>
