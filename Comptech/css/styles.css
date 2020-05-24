@@ -755,8 +755,9 @@ textarea.contact-form-text {
   font-size: 40px;
 }
 .images-info p {
-  font-weight: 600;
-  line-height: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.5;
   padding: 10px;
 }
 
