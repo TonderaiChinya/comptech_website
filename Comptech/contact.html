@@ -18,6 +18,8 @@
     <link rel="shortcut icon" href="favicon .ico" type="image/x-icon" />
     <link rel="icon" href="favicon .ico" type="image/x-icon" />
 
+    <script src="js/main.js" defer></script>
+
     <title>Comptech Engineering</title>
   </head>
   <body class="home">
@@ -118,14 +120,22 @@
             <div class="col-lg-6 col-md-6">
               <div class="contact-form">
                 <h3>Fill out the contact form</h3>
-                <form action="#">
-                  <input type="text" placeholder="Name / Company" />
-                  <input type="text" placeholder="Phone" />
-                  <input type="email" placeholder="Email" />
+                <form action="#" method="GET" id="form">
+                  <input
+                    type="text"
+                    placeholder="Name / Company"
+                    id="name"
+                    required
+                  />
+                  <input id="phoneNumber" type="text" placeholder="Phone" />
+                  <input type="email" placeholder="Email" required />
                   <textarea placeholder="Message"></textarea>
-                  <button type="submit" class="site-btn">Submit</button>
+                  <button type="submit" class="site-btn">
+                    <i class="fas fa-paper-plane"></i> Send
+                  </button>
                 </form>
               </div>
+              <div id="error"></div>
             </div>
           </div>
         </div>
