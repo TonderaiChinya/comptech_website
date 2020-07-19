@@ -13,3 +13,7 @@ form.addEventListener("submit", (e) => {
     errorElement.innerText = messages.join(", ");
   }
 });
+
+// const flipCards = document.getElementsByClassName("flip-cards");
+
+// flipCards.addEventListener("onload", );
