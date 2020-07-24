@@ -14,6 +14,32 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// const flipCards = document.getElementsByClassName("flip-cards");
+const flipCards = document.querySelector(".flip-cards");
+const flipCard = document.getElementsByClassName("flip-front");
+const logo = document.getElementsByClassName("company-logo");
 
-// flipCards.addEventListener("onload", );
+logo.addEventListener("click", move);
+
+function click() {
+  logo.classList.add(" moving");
+}
+
+flipCard.addEventListener("load", slideIn);
+
+function slideIn() {
+  flipCard.classList.add(" spin");
+
+  // if (!loadPage) {
+  //   flipCards.classList.add("slide");
+  //   flipCard.forEach((item) => item.classList.add("spin"));
+
+  //   // set menu state
+  //   loadPage = true;
+  // } else {
+  //   flipCards.classList.remove("slide");
+  //   flipCard.forEach((item) => item.classList.remove("spin"));
+
+  //   // set menu state
+  //   loadPage = false;
+  // }
+}

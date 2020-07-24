@@ -174,6 +174,12 @@ h4 {
   padding: 20px;
   height: 100%;
 }
+
+.moving {
+  margin-left: 10px;
+  transition: all 5s linear;
+}
+
 .hovv img {
   width: 100px;
 }
@@ -191,15 +197,15 @@ h4 {
   font-size: 20px;
   font-weight: lighter;
   letter-spacing: 2px;
-  transition: 1s box-shadow;
+  transition: 2s box-shadow;
 }
 
 .hovv:hover {
   box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.hovv:hover:before,
-.hovv:hover:after {
+.hovv:before,
+.hovv:after {
   display: block;
   content: "";
   position: absolute;
@@ -208,12 +214,12 @@ h4 {
   background: #272829;
   border-radius: 50%;
   z-index: -1;
-  animation: 1s clockwise infinite;
+  animation: 2s clockwise infinite;
 }
 
-.hovv:hover:after {
+.hovv:after {
   background: #b75ef3;
-  animation: 2s counterclockwise infinite;
+  animation: 3s counterclockwise infinite;
 }
 
 @keyframes clockwise {
@@ -343,25 +349,18 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .flip-card {
   cursor: pointer;
   width: 250px;
   height: 143px;
   margin: 10px;
 }
-/* .flip-front.c-1 {
-  background: #b75ef3;
-}
-.flip-front.c-2 {
-  background-color: #2f2cb8;
-}
-.flip-front.c-3 {
-  background-color: #1db817;
-}
-.flip-front.c-4 {
-  background-color: #f3bf5e;
-} */
 
+.spin {
+  transform: perspective(600px) rotateY(-180deg);
+  transition: transform 7s linear;
+}
 .flip-front img {
   width: 100%;
 }
