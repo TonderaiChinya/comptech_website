@@ -175,15 +175,15 @@ h4 {
   height: 100%;
 }
 
-span {
+.logo-in span {
   opacity: 0;
   transition: all 0.8s ease-out;
-  transform: translateY(150px);
+  transform: translateY(100vh);
 
   display: inline-block;
 }
 
-span.fade {
+.logo-in span.fade {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -356,6 +356,12 @@ span.fade {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transform: translateX(-100vw);
+}
+
+.slide-in {
+  transform: translateX(0px);
+  transition: transform 3s ease-in-out;
 }
 
 .flip-card {
@@ -365,10 +371,6 @@ span.fade {
   margin: 10px;
 }
 
-.spin {
-  transform: perspective(600px) rotateY(-180deg);
-  transition: transform 7s linear;
-}
 .flip-front img {
   width: 100%;
 }

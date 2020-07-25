@@ -11,7 +11,7 @@ function animateText(text) {
   }
 
   let char = 0;
-  let timer = setInterval(onTick, 50);
+  let timer = setInterval(onTick, 200);
 
   function onTick() {
     const span = text.querySelectorAll("span")[char];
@@ -30,5 +30,7 @@ function animateText(text) {
 }
 
 animateText(data);
-let next = animateText(newData);
-setInterval(next, 550);
+animateText(newData);
+
+const card = document.querySelector(".flip-cards");
+card.classList.add("slide-in");
