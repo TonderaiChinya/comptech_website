@@ -212,7 +212,7 @@ h4 {
   box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.hovv:before,
+/* .hovv:before,
 .hovv:after {
   display: block;
   content: "";
@@ -306,7 +306,7 @@ h4 {
     top: -5px;
     right: 0;
   }
-}
+} */
 .main-text {
   margin: auto;
 }
@@ -361,7 +361,7 @@ h4 {
 
 .slide-in {
   transform: translateX(0px);
-  transition: transform 3s ease-in-out;
+  transition: transform 3s linear;
 }
 
 .flip-card {
@@ -1005,6 +1005,9 @@ footer {
 }
 .company .logo-info h6 {
   font-size: 18px;
+}
+.moto {
+  margin-bottom: 10px;
 }
 .sig ul {
   font-size: 15px;

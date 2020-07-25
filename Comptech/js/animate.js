@@ -1,4 +1,6 @@
 // TEXT ANIMATION
+const card = document.querySelector(".flip-cards").classList.add("slide-in");
+
 const data = document.querySelector(".brandname");
 const newData = document.querySelector(".name");
 
@@ -31,6 +33,3 @@ function animateText(text) {
 
 animateText(data);
 animateText(newData);
-
-const card = document.querySelector(".flip-cards");
-card.classList.add("slide-in");
