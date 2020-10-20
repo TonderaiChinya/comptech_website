@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 body {
-  padding: 0;
   font-family: "Ropa Sans", sans-serif;
   color: #fff;
   top: 0;
@@ -15,138 +14,90 @@ body {
 a {
   color: #fff;
 }
-/* ############################################################################# */
-/* #############                   NAVIGATION-BAR                 ############## */
-/* ############################################################################# */
-.sidebar {
-  position: fixed;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background: #222;
-  transition: all 0.5s ease;
-}
-.sidebar header {
-  font-size: 22px;
-  text-align: left;
-  line-height: 40px;
-  background: #fff;
-  user-select: none;
-}
-.sidebar ul a {
-  display: block;
-  text-align: left;
-  height: 100%;
-  width: 100%;
-  line-height: 65px;
-  font-size: 15px;
-  color: white;
-  text-transform: uppercase;
-  padding-left: 20px;
-  box-sizing: border-box;
-  border-bottom: 1px solid black;
+.content{
+  max-width: 960px;
+  background: darkgrey;
+  margin: 20px auto;
 }
 
-.sidebar ul li:hover a {
-  padding-left: 40px;
-  color: #1b9bff;
-  /* background: #1b9bff; */
-  /* border: 1px solid #fff; */
-  box-sizing: border-box;
-  transition: 0.5s;
+.home-page{
+  background: url('../img/comptech-engineering.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
-.sidebar ul a.active {
-  color: #1b9bff;
-  box-shadow: 0.5px 0.5px 2px 2px #1b9bff;
-}
-.sidebar ul a i {
-  margin: 10px;
-}
-#check {
-  display: none;
-}
-label #btn,
-label #cancel {
-  position: fixed;
-  z-index: 6;
-  cursor: pointer;
-}
-label #btn {
-  left: 40px;
-  top: 25px;
-  font-size: 35px;
-  color: white;
-  padding: 2px 4px;
-  transition: all 0.5s;
-}
-label #cancel {
-  z-index: 1;
-  left: -195px;
-  top: 17px;
-  font-size: 30px;
-  color: #000;
-  padding: 4px 9px;
-  transition: all 0.5s ease;
-}
-#check:checked ~ .sidebar {
+.overlay{
+  background: rgba(3, 20, 53, 0.5);
+  height: 100%;
+  max-height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0;
   left: 0;
-}
-#check:checked ~ label #btn {
-  left: 250px;
-  opacity: 0;
-  pointer-events: none;
-}
-#check:checked ~ label #cancel {
-  left: 205px;
-}
-#check:checked ~ #home {
-  margin-left: 250px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-.brand {
-  color: #000;
-  font-size: 50px;
+
 }
-.brand h6 {
+/* MAIN HEADER */
+.navbar{
+  width: 100%;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  position: fixed;
+}
+.comptech-logo{
+  width: 200px;
+  margin-left: 10%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.navbar ul{
+  margin-right: 20px;
+  float: right;
+}
+.navbar li{
+  display: inline-block;
+  margin: 0px 20px;
+  line-height: 80px;
+}
+.navbar li a.active,
+.navbar li a:hover{
   color: #0082e6;
-  font-size: 0.4em;
-  margin-left: 30%;
 }
-.moto {
-  margin: 0 10px;
-  font-size: 15px;
+.home-text{
+  text-align: left;
+  /* padding: 10% 20%; */
 }
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 400;
+.home-text h3{
+  margin: 20px 0;
+  letter-spacing: 5px;
 }
-
-.lg-heading {
-  font-size: 5rem;
+.home-text h1{
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: #05275375 2px 3px;
 }
 
-.sm-heading {
-  font-size: 0.9em;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  /* padding: 0.2rem 1rem; */
-  text-align: center;
+.home-text p{
+  line-height: 28px;
+}
+.buttons{
+  display: flex;
+  margin-top: 20px;
+
+}
+.buttons .btn-right{
+  margin-left: 40px;
 }
 
 /* ############################################################################# */
 /* #############                   HOME-PAGE                      ############## */
 /* ############################################################################# */
-.main {
-  background: rgb(24, 26, 27);
-  /* background-size: cover;
-  background-position: center; */
-  height: 100%;
 
-  padding: 0px;
-  text-align: center;
-}
 
 #home {
   transition: all 0.5s;
@@ -173,163 +124,6 @@ h4 {
 .home-content {
   padding: 20px;
   height: 100%;
-}
-
-.logo-in span {
-  opacity: 0;
-  transition: all 0.8s ease-out;
-  transform: translateY(100vh);
-
-  display: inline-block;
-}
-
-.logo-in span.fade {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.hovv img {
-  width: 100px;
-}
-
-.hovv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 20px auto;
-  width: 65px;
-  height: 65px;
-  background: rgb(24, 26, 27);
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  transition: 2s box-shadow;
-}
-
-.hovv:hover {
-  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
-
-/* .hovv:before,
-.hovv:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 65px;
-  height: 65px;
-  background: #272829;
-  border-radius: 50%;
-  z-index: -1;
-  animation: 2s clockwise infinite;
-}
-
-.hovv:after {
-  background: #b75ef3;
-  animation: 3s counterclockwise infinite;
-}
-
-@keyframes clockwise {
-  0% {
-    top: -5px;
-    left: 0;
-  }
-  12% {
-    top: -2px;
-    left: 2px;
-  }
-  25% {
-    top: 0;
-    left: 5px;
-  }
-  37% {
-    top: 2px;
-    left: 2px;
-  }
-  50% {
-    top: 5px;
-    left: 0;
-  }
-  62% {
-    top: 2px;
-    left: -2px;
-  }
-  75% {
-    top: 0;
-    left: -5px;
-  }
-  87% {
-    top: -2px;
-    left: -2px;
-  }
-  100% {
-    top: -5px;
-    left: 0;
-  }
-}
-
-@keyframes counterclockwise {
-  0% {
-    top: -5px;
-    right: 0;
-  }
-  12% {
-    top: -2px;
-    right: 2px;
-  }
-  25% {
-    top: 0;
-    right: 5px;
-  }
-  37% {
-    top: 2px;
-    right: 2px;
-  }
-  50% {
-    top: 5px;
-    right: 0;
-  }
-  62% {
-    top: 2px;
-    right: -2px;
-  }
-  75% {
-    top: 0;
-    right: -5px;
-  }
-  87% {
-    top: -2px;
-    right: -2px;
-  }
-  100% {
-    top: -5px;
-    right: 0;
-  }
-} */
-.main-text {
-  margin: auto;
-}
-
-.main-text .logo-in h2 {
-  font-size: 5em;
-  font-weight: bolder;
-}
-.main-text .logo-in h5 {
-  color: rgb(253, 250, 250);
-  font-size: 5em;
-}
-.main-text .logo-in h6 {
-  color: #0082e6;
-  font-size: 3em;
-  /* margin-left: 30%; */
-}
-.mid-text {
-  font-size: 1.5em;
-  padding: 10px;
-  text-transform: capitalize;
-  color: #000;
-  font-weight: 200;
 }
 
 .bottom-text p {
@@ -460,6 +254,17 @@ h4 {
 /* ############################################################################# */
 /* #############                   CONTACT-PAGE                   ############## */
 /* ############################################################################# */
+.contact-us{
+  background: url('../img/Comptech/contact\ us\ comptech\ engineering.jpeg') no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+}
+
+.contact-us .overlay h1 {
+  font-size: 5em;
+}
+
 .left-content h2 {
   font-size: 3em;
   /* margin: 15px; */
@@ -468,16 +273,7 @@ h4 {
   font-size: 1.5em;
 }
 
-.contact-content {
-  background: url(../img/contact.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  /* margin-top: -25px; */
-}
-.container {
-  padding: 5%;
-}
+
 
 .contact-text h3 {
   font-size: 30px;
@@ -701,29 +497,17 @@ textarea.contact-form-text {
 /* ############################################################################# */
 /* #############                   SERVICES-PAGE                  ############## */
 /* ############################################################################# */
-.services {
-  background: rgb(24, 26, 27);
-  height: 100%;
-}
-.services .banner-bg {
-  background: url(../img/service-bg.jpeg) no-repeat;
+.services{
+  background: url('../img/Comptech/comptech\ engineering\ services.jpg') no-repeat;
   background-size: cover;
-  text-align: center;
-  height: 200px;
-  margin: 0;
-  /* padding: 40px; */
-  color: #fff;
+  height: 60vh;
+  background-position: center;
 }
-.banner-bg h1 {
+
+.services .overlay h1 {
   font-size: 5em;
 }
-/* .services-details {
-  padding: 20px;
-} */
 
-.wrapp {
-  margin-top: 10%;
-}
 .technical {
   background: url(../img/technical.jpg) no-repeat;
   background-size: cover;
@@ -744,12 +528,7 @@ textarea.contact-form-text {
   background-size: cover;
   background-position: center;
 }
-.overlay {
-  background: rgba(0, 0, 0, 0.5);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
+
 .image img {
   min-width: 300px;
   /* height: 300px; */
@@ -774,15 +553,17 @@ textarea.contact-form-text {
 /* ############################################################################# */
 /* #############                 COMMUNITY-PAGE                   ############## */
 /* ############################################################################# */
-.community {
-  background: #1b9bff;
-}
-.community img {
-  width: 100%;
-}
+
 /* ############################################################################# */
 /* #############                   ABOUT-PAGE                     ############## */
 /* ############################################################################# */
+.about{
+  background: url('../img/Comptech/about\ comptech\ engineering.jpg') no-repeat;
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+}
+
 .page-content {
   background: rgb(24, 26, 27);
   color: #fff;
@@ -892,19 +673,11 @@ textarea.contact-form-text {
 /* ############################################################################# */
 /* #############                   PROJECTS-PAGE                  ############## */
 /* ############################################################################# */
-.o-projects {
-  background: rgb(24, 26, 27);
-  height: 100%;
-}
-.o-projects .banner-bg {
-  background: url(../img/projects.jpeg) no-repeat;
+.portfolio{
+  background: url('../img/Comptech/comptech\ engineering\ portfolio.jpg') no-repeat;
   background-size: cover;
+  height: 60vh;
   background-position: center;
-  text-align: center;
-  height: 200px;
-  margin: 0;
-  /* padding: 40px; */
-  color: #fff;
 }
 
 .project-title {
@@ -942,6 +715,10 @@ textarea.contact-form-text {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  background: rgba(3, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
 }
 .btn:hover,
 .btn-dark:hover,
@@ -1107,6 +884,10 @@ footer .sig li a:hover {
 }
 
 @media (max-width: 952px) {
+  .navbar li{
+    display:none;
+    
+  }
 }
 
 @media (max-width: 858px) {
