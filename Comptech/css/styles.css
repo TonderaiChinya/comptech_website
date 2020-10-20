@@ -42,30 +42,43 @@ a {
 }
 /* MAIN HEADER */
 .navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
-  height: 80px;
-  background: rgba(0, 0, 0, 0.8);
+  min-height: 8vh;
+  background: rgb(0, 0, 0,);
   z-index: 9999;
   position: fixed;
 }
-.comptech-logo{
-  width: 200px;
-  margin-left: 10%;
+.comptech-logo {
+  margin-left: 0;
   height: auto;
-  margin-bottom: 10px;
+  float: left;
+}
+.comptech-logo img{
+  width: 200px;
 }
 .navbar ul{
-  margin-right: 20px;
-  float: right;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
 .navbar li{
-  display: inline-block;
-  margin: 0px 20px;
-  line-height: 80px;
+  margin: 0px 10px;
 }
 .navbar li a.active,
 .navbar li a:hover{
   color: #0082e6;
+}
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
 }
 .home-text{
   text-align: left;
@@ -885,12 +898,24 @@ footer .sig li a:hover {
 
 @media (max-width: 952px) {
   .navbar li{
-    display:none;
+    width: 50%;
     
   }
 }
 
 @media (max-width: 858px) {
+  .navbar ul{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 50%;
+  }
+
   .about-container {
     padding: 10px;
     max-width: 80%;
