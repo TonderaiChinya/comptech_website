@@ -46,29 +46,29 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 8vh;
-  background: rgb(0, 0, 0,);
+  height: 10vh;
+  background: rgb(0, 0, 0);
   z-index: 9999;
   position: fixed;
 }
 .comptech-logo {
-  margin-left: 0;
+  padding: 10px;
   height: auto;
   float: left;
 }
 .comptech-logo img{
-  width: 200px;
+  width: 100%;
 }
-.navbar ul{
+.nav-links{
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 50%;
 }
-.navbar li{
+/* .nav-links li{
   margin: 0px 10px;
-}
-.navbar li a.active,
-.navbar li a:hover{
+} */
+.nav-links li a.active,
+.nav-links li a:hover{
   color: #0082e6;
 }
 .burger{
@@ -79,6 +79,7 @@ a {
   height: 3px;
   background-color: rgb(226, 226, 226);
   margin: 5px;
+  transition: all 0.3s ease;
 }
 .home-text{
   text-align: left;
@@ -904,18 +905,52 @@ footer .sig li a:hover {
 }
 
 @media (max-width: 858px) {
-  .navbar ul{
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 90vh;
+    top: 10vh;
     background: rgb(0, 0, 0);
     display: flex;
     flex-direction:column;
     align-items: center;
     width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+.nav-active{
+  transform: translateX(0%);
+}
 
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
   .about-container {
     padding: 10px;
     max-width: 80%;
