@@ -13,6 +13,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
     <link href="loader/loader.css" rel="stylesheet" />
     <script
@@ -29,95 +30,51 @@
 
     <title>Comptech | About Us</title>
   </head>
-  <body class="home">
-    <div class="loader">
-      <img src="./loader/loading.gif" alt="loading" />
-    </div>
-    <div class="home-page">
-      <!-- nav -->
-      <!-- <nav class="navbar">
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn"
-            ><i class="fas fa-bars"></i
-          ></label>
-          <div class="brand">
-            <h5>Comptech</h5>
-            <h6>Engineering</h6>
-          </div>
-
-          <ul>
-            <li>
-              <a class="active"
-                ><i class="fa fa-home" aria-hidden="true"></i> - Home</a
-              >
+  <body >
+    <div class="about">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img class="d-inline-block align-top" width="200"
+          src="./img/Comptech/comptech_black_ logo.png"
+          alt="comptech-logo"
+          /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse"           id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li>
-              <a href="services.html"
-                ><i class="fa fa-cogs" aria-hidden="true"></i> - Services</a
-              >
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="web-development.html">Web Development</a>
+                <a class="dropdown-item" href="networking.html">Networking</a>
+                
+                <a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a>
+                <a class="dropdown-item" href="technical-support.html">Technical Support</a>
+              </div>
             </li>
-            <li>
-              <a href="about.html">
-                <i class="fa fa-question-circle" aria-hidden="true"></i> - About
-                US</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">News Feeds</a>
             </li>
           </ul>
-        </nav> -->
-      <!-- end of nav -->
-
-      <!-- sidebar -->
-      <input type="checkbox" id="check" />
-      <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-      </label>
-
-      <div class="sidebar">
-        <header>
-          <div class="brand">
-            <h5>Comptech</h5>
-            <h6>Engineering</h6>
-            <p class="moto">
-              ...adding more pixels to blury visions...
-            </p>
-          </div>
-        </header>
-        <ul>
-          <li>
-            <a href="index.html"
-              ><i class="fa fa-home" aria-hidden="true"></i>Home</a
-            >
-          </li>
-          <li>
-            <a href="services.html"
-              ><i class="fa fa-cogs" aria-hidden="true"></i>Services</a
-            >
-          </li>
-
-          <li>
-            <a href="community.html">
-              <i class="fa fa-handshake-o" aria-hidden="true"></i>Community</a
-            >
-          </li>
-          <li>
-            <a href="projects.html"><i class="fas fa-stream"></i>Projects</a>
-          </li>
-          <li>
-            <a href="about.html" class="active">
-              <i class="fa fa-question-circle" aria-hidden="true"></i>About
-              US</a
-            >
-          </li>
-          <li>
-            <a href="contact.html"
-              ><i class="fas fa-address-card"></i>Contact Us</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- end of side bar -->
-
+        </div>
+      </nav>
+    </div>
       <!-- page content -->
       <section class="page-content" id="home">
         <div class="">
@@ -358,7 +315,8 @@
           </center>
         </div>
       </section>
-    </div>
-    <script src="loader/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
