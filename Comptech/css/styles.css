@@ -11,6 +11,7 @@ body {
   top: 0;
   left: 0;
   background-color: rgb(214, 213, 213);
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -918,8 +919,9 @@ footer .sig li a:hover {
     display: block;
     cursor: pointer;
   }
-.nav-active{
-  transform: translateX(0%);
+  .nav-active{
+    transform: translateX(0%);
+  }
 }
 
 @keyframes navLinkFade{
