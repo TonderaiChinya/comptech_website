@@ -43,6 +43,7 @@ a {
 }
 /* MAIN HEADER */
 .navbar{
+<<<<<<< HEAD
   width: 100%;
   height: 80px;
   background: rgba(0, 0, 0, 0.8);
@@ -72,6 +73,51 @@ a {
   text-align: left;
   /* padding: 10% 20%; */
 }
+=======
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: rgb(0, 0, 0);
+  z-index: 9999;
+  position: fixed;
+}
+.comptech-logo {
+  padding: 10px;
+  height: auto;
+  float: left;
+}
+.comptech-logo img{
+  width: 100%;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+/* .nav-links li{
+  margin: 0px 10px;
+} */
+.nav-links li a.active,
+.nav-links li a:hover{
+  color: #0082e6;
+}
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.home-text{
+  text-align: left;
+  /* padding: 10% 20%; */
+}
+>>>>>>> 6287c0bebbeda2eaea2ab7d29386ae1eeda1f35a
 .home-text h3{
   margin: 20px 0;
   letter-spacing: 5px;
@@ -832,7 +878,7 @@ footer .sig li a:hover {
 /* mobile */
 
 @media all and (max-width: 415px) {
-  .sidebar {
+  /* .sidebar {
     left: -100%;
     width: 100%;
   }
@@ -846,7 +892,7 @@ footer .sig li a:hover {
   }
   #check:checked ~ #home {
     margin-left: 100%;
-  }
+  } */
 
   .main-text .large-heading {
     font-size: 30px;
@@ -885,11 +931,64 @@ footer .sig li a:hover {
 }
 
 @media (max-width: 952px) {
+<<<<<<< HEAD
   
     
+=======
+  .navbar li{
+    width: 50%;
+    
+  }
+>>>>>>> 6287c0bebbeda2eaea2ab7d29386ae1eeda1f35a
 }
 
 @media (max-width: 858px) {
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
   .about-container {
     padding: 10px;
     max-width: 80%;
