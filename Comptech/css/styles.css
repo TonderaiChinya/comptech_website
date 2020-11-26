@@ -10,10 +10,11 @@ body {
   color: #fff;
   top: 0;
   left: 0;
+  background-color: rgb(214, 213, 213);
 }
 a {
-  color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 .content{
   max-width: 960px;
@@ -42,7 +43,7 @@ a {
 
 }
 /* MAIN HEADER */
-.navbar{
+/* .navbar{
   width: 100%;
   height: 80px;
   background: rgba(0, 0, 0, 0.8);
@@ -54,8 +55,8 @@ a {
   margin-left: 10%;
   height: auto;
   margin-bottom: 10px;
-}
-.navbar ul{
+} */
+/* .navbar ul{
   margin-right: 20px;
   float: right;
 }
@@ -67,7 +68,7 @@ a {
 .navbar li a.active,
 .navbar li a:hover{
   color: #0082e6;
-}
+} */
 .home-text{
   text-align: left;
   /* padding: 10% 20%; */
@@ -98,7 +99,12 @@ a {
 /* ############################################################################# */
 /* #############                   HOME-PAGE                      ############## */
 /* ############################################################################# */
-
+.container{
+  margin-top: 7rem;
+  background-color: rgb(2, 2, 43);
+  border-radius: 5px;
+  padding: 3rem;
+}
 
 #home {
   transition: all 0.5s;
@@ -583,6 +589,7 @@ textarea.contact-form-text {
   grid-template-columns: repeat(2, 1fr);
 }
 .hr-text {
+  text-align: center;
   font-size: 26px;
   position: relative;
   border: 0;
@@ -602,11 +609,9 @@ textarea.contact-form-text {
   position: relative;
   display: inline-block;
   color: #fff;
-
   padding: 0 0.5em;
   line-height: 1.5em;
-  color: #fff;
-  background: rgb(24, 26, 27);
+  background: rgb(2, 2, 43);
 }
 
 /* .about-container h3 {
@@ -627,18 +632,17 @@ textarea.contact-form-text {
   justify-content: space-evenly;
 }
 .team .crew img {
-  width: 300px;
-  /* height: 250px;
- 
-  border-radius: 5%;
-  box-shadow: 2px 2px 7px #fff; */
+  width: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .team-item {
-  width: 300px;
+  width: 200px;
   background: #f5f5f5;
   text-align: center;
   margin-bottom: 30px;
+  border-radius: 5px;
 }
 
 .team-item .ti-text {
@@ -647,24 +651,25 @@ textarea.contact-form-text {
 
 .team-item .ti-text h5 {
   font-size: 20px;
-  color: #111111;
+  color: #267bc0;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
-.team-item .ti-text span {
-  display: block;
+.team-item .ti-text P {
+  padding: 10px;
   font-size: 15px;
-  color: #009603;
+  color: #000000;
   margin-bottom: 20px;
 }
 
-.team-item .ti-text .ti-social a {
-  color: #666666;
-  font-size: 15px;
-  display: inline-block;
-  margin-right: 20px;
+.team-item  a {
+  position: relative;
+  bottom: 0;
+  color: #267bc0;
+  float: right;
+  margin-right: 15px;
 }
 
 .team-item .ti-text .ti-social a:last-child {
@@ -759,7 +764,7 @@ footer {
 }
 
 .company-logo {
-  max-width: 65px;
+  max-width: 250px;
 }
 
 .row-container {
@@ -773,12 +778,12 @@ footer {
   display: inline-block;
 }
 
-.company .logo-info {
+/* .company .logo-info {
   text-align: center;
   float: right;
   margin: 10px 10px;
-}
-.company .logo-info h5 {
+} */
+/* .company .logo-info h5 {
   font-size: 30px;
 }
 .company .logo-info h6 {
@@ -786,7 +791,7 @@ footer {
 }
 .moto {
   margin-bottom: 10px;
-}
+} */
 .sig ul {
   font-size: 15px;
 }
