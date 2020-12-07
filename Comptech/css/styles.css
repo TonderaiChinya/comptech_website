@@ -10,11 +10,11 @@ body {
   color: #fff;
   top: 0;
   left: 0;
-  background-color: rgb(214, 213, 213);
+  background-color: rgb(133, 130, 130);
   overflow-x: hidden;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
 }
 .content{
@@ -23,10 +23,14 @@ a {
   margin: 20px auto;
 }
 
+nav{
+  height: 10vh;
+}
+
 .home-page{
   background: url('../img/comptech-engineering.jpg') no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 .overlay{
   background: rgba(3, 20, 53, 0.5);
@@ -43,33 +47,7 @@ a {
 
 
 }
-/* MAIN HEADER */
-/* .navbar{
-  width: 100%;
-  height: 80px;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-  position: fixed;
-}
-.comptech-logo{
-  width: 200px;
-  margin-left: 10%;
-  height: auto;
-  margin-bottom: 10px;
-} */
-/* .navbar ul{
-  margin-right: 20px;
-  float: right;
-}
-.navbar li{
-  display: inline-block;
-  margin: 0px 20px;
-  line-height: 80px;
-}
-.navbar li a.active,
-.navbar li a:hover{
-  color: #0082e6;
-} */
+
 .home-text{
   text-align: left;
   /* padding: 10% 20%; */
@@ -101,10 +79,14 @@ a {
 /* #############                   HOME-PAGE                      ############## */
 /* ############################################################################# */
 .container{
-  margin-top: 7rem;
-  background-color: rgb(2, 2, 43);
+  margin-top: 4rem;
   border-radius: 5px;
   padding: 3rem;
+  margin-bottom: 4rem;
+}
+
+.container-background{
+  background-color: #0e4670;
 }
 
 #home {
@@ -134,130 +116,6 @@ a {
   height: 100%;
 }
 
-.bottom-text p {
-  /* text-align: left; */
-  font-size: 1.5em;
-  font-weight: 100;
-  padding: 5px;
-}
-.bottom-text hr {
-  margin: 12px 0;
-  border: 0;
-  text-align: center;
-}
-.bottom-text hr:before {
-  content: "\2022    \2022   \2022   \2022    \2022";
-  font-size: 30px;
-  color: #4f8bca;
-}
-
-/* flipping cards */
-
-.flip-cards {
-  margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  transform: translateX(-100vw);
-}
-
-.slide-in {
-  transform: translateX(0px);
-  transition: transform 3s linear;
-}
-
-.flip-card {
-  cursor: pointer;
-  width: 250px;
-  height: 143px;
-  margin: 10px;
-}
-
-.flip-front img {
-  width: 100%;
-}
-.flip-front,
-.flip-back {
-  width: 250px;
-  height: 143px;
-  overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-
-  transition: transform 0.6s linear;
-}
-
-.flip-front {
-  transform: perspective(400px) rotateY(0deg);
-}
-.flip-back {
-  background: rgb(238, 242, 243);
-  transform: perspective(400px) rotateY(180deg);
-}
-.flip-back-content {
-  padding: 40px;
-
-  font-size: 15px;
-  font-weight: bolder;
-  color: rgb(47, 43, 43);
-  text-align: center;
-
-  width: 100%;
-}
-.flip-card:hover > .flip-front {
-  transform: perspective(600px) rotateY(-180deg);
-}
-.flip-card:hover > .flip-back {
-  transform: perspective(600px) rotateY(0deg);
-}
-
-.cards {
-  margin: 10px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.card {
-  cursor: pointer;
-  width: 200px;
-  height: 340px;
-}
-.front,
-.back {
-  width: 200px;
-  height: 340px;
-  overflow: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  transition: transform 0.6s linear;
-}
-.front img {
-  height: 100%;
-}
-.front {
-  transform: perspective(400px) rotateY(0deg);
-}
-.back {
-  background: rgb(46, 43, 43);
-  transform: perspective(400px) rotateY(180deg);
-}
-.back-content {
-  margin-top: 20%;
-  padding: 20px;
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  width: 100%;
-}
-.card:hover > .front {
-  transform: perspective(600px) rotateY(-180deg);
-}
-.card:hover > .back {
-  transform: perspective(600px) rotateY(0deg);
-}
 
 /* ############################################################################# */
 /* #############                   CONTACT-PAGE                   ############## */
@@ -444,64 +302,6 @@ a {
   border: none;
 }
 
-/*
-.contact-dev {
-  display: grid;
-  
-  padding: 5% 10%;
-  grid-template-areas: "left-content contact-section";
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-}
-.contact-section h1 {
-  text-align: center;
-  color: #ddd;
-}
-
-.contact-form {
-  max-width: 30em;
-  margin: auto;
-  padding: 0 1px;
-  overflow: hidden;
-}
-
-.contact-form-text {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 10px 0;
-  border: 0;
-  background: #000;
-  padding: 10px 20px;
-  outline: none;
-  color: #ddd;
-  transition: 0.5s;
-}
-.contact-form-text:hover {
-  box-shadow: 0 0 10px 4px #34495e;
-}
-textarea.contact-form-text {
-  resize: none;
-  height: 50px;
-}
-.contact-form-btn {
-  float: right;
-  border: 0;
-  background: #111;
-  color: #fff;
-  padding: 6px 25px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.contact-form-btn:hover {
-  background: #2980b9;
-} */
-
-/* .home {
-  overflow: hidden;
-} */
-
 /* ############################################################################# */
 /* #############                   SERVICES-PAGE                  ############## */
 /* ############################################################################# */
@@ -526,6 +326,97 @@ textarea.contact-form-text {
   background-size: cover;
   background-position: center;
 }
+.section-title{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.section-title:after{
+  content: "";
+  background: #0082e6;
+  display: block;
+  height: 3px;
+  width: 200px;
+  margin: 15px auto;
+}
+.pricing-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card{
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: .3s linear;
+}
+
+.pricing-card-header{
+  background-color: #0fbcf9;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #0fbcf9;
+}
+
+.price{
+  font-size: 70px;
+  color: #0fbcf9;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+
+.price sup, .price span{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+}
+
+.pricing-card li{
+  font-size: 16px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #0fbcf9;
+  color: #0fbcf9;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.order-btn:hover{
+  background-color: #0fbcf9;
+  color: #fff;
+}
+
+
+
 .networking {
   background: url(../img/networking.jpg) no-repeat;
   background-size: cover;
@@ -558,9 +449,7 @@ textarea.contact-form-text {
   padding: 10px;
 }
 
-/* ############################################################################# */
-/* #############                 COMMUNITY-PAGE                   ############## */
-/* ############################################################################# */
+
 
 /* ############################################################################# */
 /* #############                   ABOUT-PAGE                     ############## */
@@ -573,7 +462,7 @@ textarea.contact-form-text {
 }
 
 .page-content {
-  background: rgb(24, 26, 27);
+  background: #0e4670;
   color: #fff;
   align-items: center;
   /* background: url(../img/long_background.jpeg) no-repeat;
@@ -612,7 +501,7 @@ textarea.contact-form-text {
   color: #fff;
   padding: 0 0.5em;
   line-height: 1.5em;
-  background: rgb(2, 2, 43);
+  background:#0e4670;
 }
 
 /* .about-container h3 {
@@ -683,15 +572,18 @@ textarea.contact-form-text {
 .portfolio{
   background: url('../img/Comptech/comptech\ engineering\ portfolio.jpg') no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 90vh;
   background-position: center;
 }
 
-.project-title {
+.portfolio h1{
   font-size: 4rem;
-  margin-left: 6%;
-  text-decoration: line-through;
 }
+.portfolio p{
+  font-size: 1.5rem;
+}
+
+
 
 .projects-details img {
   width: 100%;
@@ -702,19 +594,14 @@ textarea.contact-form-text {
 
 .projects {
   display: grid;
-  padding: 7%;
+
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr);
 }
 .projects img {
   width: 100%;
-  border: 3px #fff solid;
 }
-.projects img:hover {
-  opacity: 0.7;
-  border-color: #00c0ff;
-  transition: all 0.5s ease-out;
-}
+
 .btn,
 .btn-dark,
 .btn-light {
@@ -966,7 +853,7 @@ opacity: 0;
   .banner-bg {
     height: 100px;
   }
-}
+
 
 @media (max-width: 600px) {
   .slide-container {
@@ -1022,4 +909,9 @@ opacity: 0;
 
 /* desktop */
 @media only screen and (min-width: 1000px) {
+}
+@media screen and (max-width:1100px){
+  .pricing-card{
+    flex: 50%;
+  }
 }
